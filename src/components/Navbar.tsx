@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/mc-matata-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -17,8 +18,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#home" className="font-display text-2xl font-bold text-gradient-gold tracking-wider">
-          MC MATATA
+        <a href="#home" className="flex items-center gap-2">
+          <img src={logo} alt="MC Matata - Mr. Sherehe" className="h-10 w-auto" />
         </a>
 
         {/* Desktop */}
