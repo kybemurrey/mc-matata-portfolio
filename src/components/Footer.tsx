@@ -1,5 +1,38 @@
 import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 
+const TikTokIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z" />
+  </svg>
+);
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/mc_matataa",
+    icon: Instagram,
+    label: "Instagram",
+    handle: "@mc_matataa",
+  },
+  {
+    href: "https://www.facebook.com/Mc-MATATA",
+    icon: Facebook,
+    label: "Facebook",
+    handle: "@Mc-MATATA",
+  },
+  {
+    href: "https://www.tiktok.com/@mcmatataa",
+    icon: TikTokIcon,
+    label: "TikTok",
+    handle: "@mcmatataa",
+  },
+];
+
 const Footer = () => {
   return (
     <footer id="contact" className="py-16 bg-card border-t border-border">
@@ -33,15 +66,25 @@ const Footer = () => {
           {/* Social */}
           <div>
             <h4 className="font-display text-lg font-semibold text-primary mb-4">FOLLOW</h4>
-            <div className="flex gap-4">
-              <a href="https://instagram.com/mcmatata" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center border border-border rounded-sm text-muted-foreground hover:text-primary hover:border-primary transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="https://facebook.com/mcmatata" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center border border-border rounded-sm text-muted-foreground hover:text-primary hover:border-primary transition-colors">
-                <Facebook size={18} />
-              </a>
+            <div className="flex gap-3">
+              {socialLinks.map(({ href, icon: Icon, label, handle }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-10 h-10 flex items-center justify-center border border-border rounded-sm text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+                >
+                  <Icon size={18} />
+                </a>
+              ))}
             </div>
-            <p className="text-muted-foreground text-sm mt-4">@mcmatata</p>
+            <div className="flex flex-col gap-1 mt-4">
+              {socialLinks.map(({ label, handle }) => (
+                <p key={label} className="text-muted-foreground text-xs">{handle}</p>
+              ))}
+            </div>
           </div>
         </div>
 
