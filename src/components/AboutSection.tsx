@@ -36,11 +36,11 @@ const AboutSection = () => {
               MC <span className="text-gradient-gold">MATATA</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              From Kamkunji, Eldoret to commanding the biggest stages in the North Rift — 
-              MC Matata is a premier Master of Ceremonies, corporate hype man, and cultural architect. 
+              From Eldoret to commanding the biggest stages across the nation — 
+              MC Matata is an all-round Master of Ceremonies, corporate hype man, and cultural architect. 
               Known for his versatility in hosting everything from high-energy Gengetone events to 
-              organized corporate functions, he has become a regional icon and role model for 
-              the "Ghetto-to-Greatness" narrative.
+              organized corporate functions, he has become a regional icon and role model, 
+              bringing world-class MC energy to every stage he graces.
             </p>
           </motion.div>
         </div>
