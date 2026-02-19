@@ -14,10 +14,10 @@ const TikTokIcon = () => (
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/mc_matataa",
+    href: "https://www.instagram.com/m.c_m.a.t.a.t.aa/",
     icon: Instagram,
     label: "Instagram",
-    handle: "@mc_matataa",
+    handle: "@m.c_m.a.t.a.t.aa",
   },
   {
     href: "https://www.facebook.com/arnold.birgen",
