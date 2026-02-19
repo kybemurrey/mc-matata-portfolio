@@ -3,12 +3,20 @@ import corporateImg from "@/assets/matata-corporate.png";
 import pointingImg from "@/assets/matata-pointing.png";
 import stageImg from "@/assets/matata-stage.png";
 import micImg from "@/assets/matata-mic.png";
+import stageCrowdImg from "@/assets/gallery-stage-crowd.png";
+import selfieCrowdImg from "@/assets/gallery-selfie-crowd.png";
+import crowdHandsImg from "@/assets/gallery-crowd-hands.png";
+import officialMeetingImg from "@/assets/gallery-official-meeting.png";
 
 const images = [
   { src: pointingImg, alt: "MC Matata portrait", span: "md:row-span-2" },
   { src: stageImg, alt: "MC Matata on stage with crowd", span: "md:col-span-2" },
   { src: corporateImg, alt: "MC Matata corporate look", span: "" },
   { src: micImg, alt: "MC Matata with microphone", span: "" },
+  { src: stageCrowdImg, alt: "MC Matata performing on stage at Cross Culture Festival", span: "md:col-span-2" },
+  { src: selfieCrowdImg, alt: "Fan selfie moment at Cross Culture Festival", span: "" },
+  { src: crowdHandsImg, alt: "Crowd energy at Cross Culture Festival", span: "" },
+  { src: officialMeetingImg, alt: "MC Matata presenting Cross Culture Festival hoodie to official", span: "md:col-span-2" },
 ];
 
 const GallerySection = () => {

@@ -20,7 +20,7 @@ const socialLinks = [
     handle: "@mc_matataa",
   },
   {
-    href: "https://www.facebook.com/Mc-MATATA",
+    href: "https://www.facebook.com/arnold.birgen",
     icon: Facebook,
     label: "Facebook",
     handle: "@Mc-MATATA",
