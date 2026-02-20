@@ -19,17 +19,10 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <a href="#home" className="flex items-center">
-          <div
-            style={{
-              width: "160px",
-              height: "48px",
-              backgroundImage: `url(${logo})`,
-              backgroundSize: "340%",
-              backgroundPosition: "50% 54%",
-              backgroundRepeat: "no-repeat",
-            }}
-            role="img"
-            aria-label="MC Matata - Mr. Sherehe"
+          <img
+            src={logo}
+            alt="MC Matata - Mr. Sherehe"
+            className="h-20 md:h-28 w-auto invert -my-4"
           />
         </a>
 
