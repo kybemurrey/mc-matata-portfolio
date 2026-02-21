@@ -9,9 +9,9 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="MC Matata"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-[30%_top]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-20">
